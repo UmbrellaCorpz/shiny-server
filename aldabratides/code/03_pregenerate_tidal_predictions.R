@@ -29,7 +29,7 @@ t_res <- as.integer(commandArgs(trailingOnly = T)[1])  # resolution for predicti
 
 # to make it more manegeable split it by month
 time_frame <- data.frame(ds = seq(as.POSIXct("1978-01-01 00:00:00", tz = "Indian/Mahe"),
-                    as.POSIXct("2020-01-01 00:00:00", tz = "Indian/Mahe"), 
+                    as.POSIXct("2030-01-01 00:00:00", tz = "Indian/Mahe"), 
                     "month")) %>% 
   dplyr::mutate(de = dplyr::lead(ds),
                 year =lubridate::year(ds),
