@@ -1,0 +1,2 @@
+To extend the tidal predictions date past 2030, the following file has to be edited: 03_pregenerate_tidal_predictions.R
+The Date Range is under the time_frame property.
